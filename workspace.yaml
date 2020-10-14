@@ -13,14 +13,14 @@ spec:
       moduleOutputName: epg
   variables:
     - key: username
-      ValueFrom:
+      valueFrom:
         configMapKeyRef:
           name: tf-inputs
           key: username
       sensitive: false
       environmentVariable: false
     - key: url
-      ValueFrom:
+      valueFrom:
         configMapKeyRef:
           name: tf-inputs
           key: url
