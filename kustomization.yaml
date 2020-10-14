@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- workspace.yaml
+namespace:
+configMapGenerator:
+- literals:
+  - username=admin
+  - url="https://172.31.186.4"
+  name: tf-inputs
+configurations:
+- ./kustomizeconfig/workspace.yaml
