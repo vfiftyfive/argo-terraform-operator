@@ -2,5 +2,5 @@ nameReference:
 - kind: ConfigMap
   version: v1
   fieldSpecs:
-  - path: spec/variables/ValueFrom/configMapKeyRef/name
+  - path: spec/variables/valueFrom/configMapKeyRef/name
     kind: Workspace
